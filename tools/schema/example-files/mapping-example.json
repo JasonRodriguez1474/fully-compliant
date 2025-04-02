@@ -1,0 +1,42 @@
+[
+  {
+    "source_framework": "NIST-800-171-R2",
+    "source_control": "3.1.1",
+    "target_framework": "CMMC-L2-V2.0",
+    "target_control": "AC.L2-3.1.1",
+    "relationship": "exact",
+    "notes": "CMMC L2 AC.L2-3.1.1 is directly derived from NIST 800-171 control 3.1.1 with identical requirements",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R2",
+    "source_control": "3.1.1",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "1.1",
+    "relationship": "related",
+    "notes": "CIS control 1.1 (Establish and Maintain Detailed Enterprise Asset Inventory) is related to NIST 800-171 3.1.1 as it helps identify authorized devices, which supports limiting system access to authorized devices. However, CIS 1.1 focuses more on inventory management while NIST 3.1.1 covers broader access control requirements.",
+    "mapping_source": "Auto-generated",
+    "mapping_confidence": 0.75
+  },
+  {
+    "source_framework": "NIST-800-171-R2",
+    "source_control": "3.1.1",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "3.3",
+    "relationship": "related",
+    "notes": "CIS control 3.3 (Configure Data Access Control Lists) is related to NIST 800-171 3.1.1 as it implements mechanisms to limit access to authorized users, which directly supports the NIST requirement.",
+    "mapping_source": "Auto-generated",
+    "mapping_confidence": 0.85
+  },
+  {
+    "source_framework": "NIST-800-171-R2",
+    "source_control": "3.1.1",
+    "target_framework": "NIST-800-171-R3",
+    "target_control": "03.01.01",
+    "relationship": "exact",
+    "notes": "NIST 800-171 R3 updated the control ID format but maintains the same requirement as R2 3.1.1",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  }
+]

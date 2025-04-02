@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "evidence-record": {
+      "type": "object",
+      "required": ["id", "title", "evidence_type", "date_collected", "description", "controls_satisfied"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the evidence record"
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of the evidence"
+        },
+        "evidence_type": {
+          "type": "string",
+          "enum": ["document", "screenshot", "config_file", "log_data", "interview", "policy", "procedure", "test_result", "scan_result", "other"],
+          "description": "Type of evidence provided"
+        },
+        "date_collected": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the evidence was collected"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the evidence and its relevance"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of the evidence (person, system, etc.)"
+        },
+        "file_references": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "References to associated files"
+        },
+        "expiration_date": {
+          "type": "string",
+          "format": "date",
+          "description": "When this evidence expires (if applicable)"
+        },
+        "controls_satisfied": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["framework", "control_id", "satisfaction_level"],
+            "properties": {
+              "framework": {
+                "type": "string",
+                "description": "Framework identifier"
+              },
+              "control_id": {
+                "type": "string",
+                "description": "Control identifier within the framework"
+              },
+              "satisfaction_level": {
+                "type": "string",
+                "enum": ["full", "partial", "none"],
+                "description": "Level of control satisfaction provided by this evidence"
+              },
+              "assessor_notes": {
+                "type": "string",
+                "description": "Notes from the assessor about this evidence's applicability"
+              },
+              "verification_date": {
+                "type": "string",
+                "format": "date",
+                "description": "When the evidence was verified against this control"
+              },
+              "verified_by": {
+                "type": "string",
+                "description": "Who verified this evidence"
+              },
+              "llm_confidence": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "Confidence score if LLM was used to assess evidence"
+              },
+              "related_controls": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "framework": {
+                      "type": "string",
+                      "description": "Framework identifier"
+                    },
+                    "control_id": {
+                      "type": "string",
+                      "description": "Control identifier within the framework"
+                    },
+                    "satisfaction_level": {
+                      "type": "string",
+                      "enum": ["full", "partial", "none"],
+                      "description": "Level of control satisfaction for related control"
+                    },
+                    "mapping_confidence": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1,
+                      "description": "Confidence in the mapping relationship"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Organizational tags for this evidence"
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Additional metadata fields specific to the evidence type"
+        }
+      }
+    }
+  }
+}
