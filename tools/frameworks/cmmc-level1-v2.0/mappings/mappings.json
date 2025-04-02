@@ -1,0 +1,172 @@
+[
+    {
+        "source_framework": "CMMC",
+        "source_control": "AC.L1-3.1.1",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.1.1",
+        "relationship": "exact",
+        "notes": "CMMC control AC.L1-3.1.1 is an exact mapping to NIST SP 800-171 Rev 2 control 3.1.1",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "AC.L1-3.1.2",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.1.2",
+        "relationship": "exact",
+        "notes": "CMMC control AC.L1-3.1.2 is an exact mapping to NIST SP 800-171 Rev 2 control 3.1.2",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "AC.L1-3.1.20",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.1.20",
+        "relationship": "exact",
+        "notes": "CMMC control AC.L1-3.1.20 is an exact mapping to NIST SP 800-171 Rev 2 control 3.1.20",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "AC.L1-3.1.22",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.1.22",
+        "relationship": "exact",
+        "notes": "CMMC control AC.L1-3.1.22 is an exact mapping to NIST SP 800-171 Rev 2 control 3.1.22",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "IA.L1-3.5.1",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.5.1",
+        "relationship": "exact",
+        "notes": "CMMC control IA.L1-3.5.1 is an exact mapping to NIST SP 800-171 Rev 2 control 3.5.1",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "IA.L1-3.5.2",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.5.2",
+        "relationship": "exact",
+        "notes": "CMMC control IA.L1-3.5.2 is an exact mapping to NIST SP 800-171 Rev 2 control 3.5.2",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "MP.L1-3.8.3",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.8.3",
+        "relationship": "exact",
+        "notes": "CMMC control MP.L1-3.8.3 is an exact mapping to NIST SP 800-171 Rev 2 control 3.8.3",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "PE.L1-3.10.1",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.10.1",
+        "relationship": "exact",
+        "notes": "CMMC control PE.L1-3.10.1 is an exact mapping to NIST SP 800-171 Rev 2 control 3.10.1",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+     {
+        "source_framework": "CMMC",
+        "source_control": "PE.L1-3.10.3",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.10.3",
+        "relationship": "exact",
+        "notes": "CMMC control PE.L1-3.10.3 is an exact mapping to NIST SP 800-171 Rev 2 control 3.10.3",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "PE.L1-3.10.4",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.10.4",
+        "relationship": "exact",
+        "notes": "CMMC control PE.L1-3.10.4 is an exact mapping to NIST SP 800-171 Rev 2 control 3.10.4",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "PE.L1-3.10.5",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.10.5",
+        "relationship": "exact",
+        "notes": "CMMC control PE.L1-3.10.5 is an exact mapping to NIST SP 800-171 Rev 2 control 3.10.5",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+         "source_framework": "CMMC",
+        "source_control": "SC.L1-3.13.1",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.13.1",
+        "relationship": "exact",
+        "notes": "CMMC control SC.L1-3.13.1 is an exact mapping to NIST SP 800-171 Rev 2 control 3.13.1",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "SC.L1-3.13.5",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.13.5",
+        "relationship": "exact",
+        "notes": "CMMC control SC.L1-3.13.5 is an exact mapping to NIST SP 800-171 Rev 2 control 3.13.5",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "SI.L1-3.14.1",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.14.1",
+        "relationship": "exact",
+        "notes": "CMMC control SI.L1-3.14.1 is an exact mapping to NIST SP 800-171 Rev 2 control 3.14.1",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "SI.L1-3.14.2",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.14.2",
+        "relationship": "exact",
+        "notes": "CMMC control SI.L1-3.14.2 is an exact mapping to NIST SP 800-171 Rev 2 control 3.14.2",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "SI.L1-3.14.4",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.14.4",
+        "relationship": "exact",
+        "notes": "CMMC control SI.L1-3.14.4 is an exact mapping to NIST SP 800-171 Rev 2 control 3.14.4",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    },
+    {
+        "source_framework": "CMMC",
+        "source_control": "SI.L1-3.14.5",
+        "target_framework": "NIST SP 800-171 Rev 2",
+        "target_control": "3.14.5",
+        "relationship": "exact",
+        "notes": "CMMC control SI.L1-3.14.5 is an exact mapping to NIST SP 800-171 Rev 2 control 3.14.5",
+        "mapping_source": "Manual",
+        "mapping_confidence": 1.0
+    }
+]

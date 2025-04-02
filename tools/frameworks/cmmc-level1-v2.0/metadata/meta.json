@@ -1,0 +1,12 @@
+{
+    "standard": "CMMC",
+    "version": "2.0",
+    "level": 1,
+    "title": "CMMC Self-Assessment Guide Level 1",
+    "publication_date": "2021-12",
+    "status": "Active",
+    "source_organization": "Office of the Under Secretary of Defense for Acquisition and Sustainment (OUSD(A&S))",
+    "purpose": "Provides self-assessment guidance for Level 1 of the Cybersecurity Maturity Model Certification (CMMC).",
+    "focus": "Federal Contract Information (FCI)",
+    "basis": "Based on FAR Clause 52.204-21 basic safeguarding requirements."
+}

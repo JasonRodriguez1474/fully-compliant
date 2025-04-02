@@ -1,0 +1,15 @@
+{
+    "standard": "NIST SP 800-171",
+    "version": "Revision 2",
+    "title": "Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations",
+    "publication_date": "2020-02",
+    "update_date": "2021-01-28",
+    "withdrawal_date": "2024-05-14",
+    "superseded_by": "NIST SP 800-171r3",
+    "status": "Withdrawn",
+    "source_organization": "National Institute of Standards and Technology (NIST)",
+    "purpose": "Provide recommended security requirements for protecting the confidentiality of CUI when the information is resident in nonfederal systems and organizations.",
+    "focus": "Controlled Unclassified Information (CUI)",
+    "applicability": "Nonfederal systems and organizations processing, storing, or transmitting CUI, where not operating on behalf of an agency and no specific CUI safeguarding requirements exist.",
+    "url": "https://doi.org/10.6028/NIST.SP.800-171r2"
+}

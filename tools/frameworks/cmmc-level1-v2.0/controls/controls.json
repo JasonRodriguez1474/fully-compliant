@@ -1,0 +1,397 @@
+[
+    {
+        "id": "AC.L1-3.1.1",
+        "family_id": "AC",
+        "family_name": "Access Control",
+        "title": "Authorized Access Control",
+        "description": "Limit information system access to authorized users, processes acting on behalf of authorized users, or devices (including other information systems).",
+        "discussion": "Access control policies (e.g., identity or role-based policies, control matrices, and cryptography) control access between active entities or subjects (i.e., users or processes acting on behalf of users) and passive entities or objects (e.g., devices, files, records, and domains) in systems. Access enforcement mechanisms can be employed at the application and service level to provide increased information security. Other systems include systems internal and external to the organization. This requirement focuses on account management for systems and applications. The definition of and enforcement of access authorizations, other than those determined by account type (e.g., privileged verses [sic] non-privileged) are addressed in requirement 3.1.2 (AC.L1-3.1.2). Identify users, processes, and devices that are allowed to use company computers and can log on to the company network. Automated updates and other automatic processes should be associated with the user who initiated (authorized) the process. Limit the devices (e.g., printers) that can be accessed by company computers. Set up your system so that only authorized users, processes, and devices can access the company network. This practice, AC.L1-3.1.1, controls system access based on user, process, or device identity. AC.L1-3.1.1 leverages IA.L1-3.5.1 which provides a vetted and trusted identity for access control.",
+        "implementation_guidance": "Identify users, processes, and devices that are allowed to use company computers and can log on to the company network. Automated updates and other automatic processes should be associated with the user who initiated (authorized) the process. Limit the devices (e.g., printers) that can be accessed by company computers. Set up your system so that only authorized users, processes, and devices can access the company network. Example: Your company maintains a list of all personnel authorized to use company information systems. This list is used to support identification and authentication activities conducted by IT when authorizing access to systems. Example: A coworker wants to buy a new multi-function printer/scanner/fax device and make it available on the company network. You explain that the company controls system and device access to the network, and will prevent network access by unauthorized systems and devices. You help the coworker submit a ticket that asks for the printer to be granted access to the network, and appropriate leadership approves the device.",
+        "asset_types": [
+            "Information Systems",
+            "Networks",
+            "Computing Devices",
+            "Software",
+            "Hardware",
+            "Users",
+            "Processes",
+            "Printers",
+            "Scanners",
+            "Fax Devices"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "AC.L1-3.1.2",
+        "family_id": "AC",
+        "family_name": "Access Control",
+        "title": "Transaction & Function Control",
+        "description": "Limit information system access to the types of transactions and functions that authorized users are permitted to execute.",
+        "discussion": "Organizations may choose to define access privileges or other attributes by account, by type of account, or a combination of both. System account types include individual, shared, group, system, anonymous, guest, emergency, developer, manufacturer, vendor, and temporary. Other attributes required for authorizing access include restrictions on time-of-day, day-of-week, and point-of-origin. In defining other account attributes, organizations consider system-related requirements (e.g., system upgrades scheduled maintenance,) and mission or business requirements, (e.g., time zone differences, customer requirements, remote access to support travel requirements). Limit users to only the information systems, roles, or applications they are permitted to use and are needed for their roles and responsibilities. Limit access to applications and data based on the authorized users' roles and responsibilities. Common types of functions a user can be assigned are create, read, update, and delete.",
+        "implementation_guidance": "Limit users to only the information systems, roles, or applications they are permitted to use and are needed for their roles and responsibilities. Limit access to applications and data based on the authorized users' roles and responsibilities. Common types of functions a user can be assigned are create, read, update, and delete. Example: You supervise the team that manages DoD contracts for your company. Members of your team need to access the contract information to perform their work properly. Because some of that data contains FCI, you work with IT to set up your group's systems so that users can be assigned access based on their specific roles. Each role limits whether an employee has read-access or create/read/delete/update -access. Implementing this access control restricts access to FCI information unless specifically authorized.",
+        "asset_types": [
+            "Information Systems",
+            "Applications",
+            "Data",
+            "Accounts",
+            "Users"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "AC.L1-3.1.20",
+        "family_id": "AC",
+        "family_name": "Access Control",
+        "title": "External Connections",
+        "description": "Verify and control/limit connections to and use of external information systems.",
+        "discussion": "External systems are systems or components of systems for which organizations typically have no direct supervision and authority over the application of security requirements and controls or the determination of the effectiveness of implemented controls on those systems. External systems include personally owned systems, components, or devices and privately-owned computing and communications devices resident in commercial or public facilities. This requirement also addresses the use of external systems for the processing, storage, or transmission of FCI, including accessing cloud services (e.g., infrastructure as a service, platform as a service, or software as a service) from organizational systems. Organizations establish terms and conditions for the use of external systems in accordance with organizational security policies and procedures. Terms and conditions address as a minimum, the types of applications that can be accessed on organizational systems from external systems. If terms and conditions with the owners of external systems cannot be established, organizations may impose restrictions on organizational personnel using those external systems. This requirement recognizes that there are circumstances where individuals using external systems (e.g., contractors, coalition partners) need to access organizational systems. In those situations, organizations need confidence that the external systems contain the necessary controls so as not to compromise, damage, or otherwise harm organizational systems. Verification that the required controls have been effectively implemented can be achieved by third-party, independent assessments, attestations, or other means, depending on the assurance or confidence level required by organizations. Note that while \"external\" typically refers to outside of the organization's direct supervision and authority, that is not always the case. Regarding the protection of FCI across an organization, the organization may have systems that process FCI and others that do not. And among the systems that process FCI there are likely access restrictions for FCI that apply between systems. Therefore, from the perspective of a given system, other systems within the organization may be considered \"external\" to that system. Control and manage connections between your company network and outside networks. Outside networks could include the public internet, one of your own company's networks that falls outside of your CMMC Assessment Scope (e.g., an isolated lab), or a network that does not belong to your company. Tools to accomplish include firewalls and connection allow/deny lists. External systems not controlled by your company could be running applications that are prohibited or blocked. Control and limit access to corporate networks from personally owned devices such as laptops, tablets, and phones. You may choose to limit how and when your network is connected to outside systems or only allow certain employees to connect to outside systems from network resources.",
+        "implementation_guidance": "Control and manage connections between your company network and outside networks. Outside networks could include the public internet, one of your own company's networks that falls outside of your CMMC Assessment Scope (e.g., an isolated lab), or a network that does not belong to your company. Tools to accomplish include firewalls and connection allow/deny lists. External systems not controlled by your company could be running applications that are prohibited or blocked. Control and limit access to corporate networks from personally owned devices such as laptops, tablets, and phones. You may choose to limit how and when your network is connected to outside systems or only allow certain employees to connect to outside systems from network resources. Example: You and your coworkers are working on a big proposal and will put in extra hours over the weekend to get it done. Part of the proposal includes FCI. Because FCI should not be shared publicly, you remind your coworkers of the policy requirement to use their company laptops, not personal laptops or tablets, when working on the proposal over the weekend. You also remind everyone to work from the cloud environment that is approved for processing and storing FCI rather than the other collaborative tools that may be used for other projects.",
+        "asset_types": [
+            "Information Systems",
+            "Networks",
+            "Cloud Services",
+            "Personally Owned Devices",
+            "Laptops",
+            "Tablets",
+            "Phones",
+            "Firewalls"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "AC.L1-3.1.22",
+        "family_id": "AC",
+        "family_name": "Access Control",
+        "title": "Control Public Information",
+        "description": "Control information posted or processed on publicly accessible information systems.",
+        "discussion": "In accordance with laws, Executive Orders, directives, policies, regulations, or standards, the public is not authorized access to nonpublic information (e.g., information protected under the Privacy Act, FCI, and proprietary information). This requirement addresses systems that are controlled by the organization and accessible to the public, typically without identification or authentication. Individuals authorized to post FCI onto publicly accessible systems are designated. The content of information is reviewed prior to posting onto publicly accessible systems to ensure that nonpublic information is not included. Do not allow FCI to become public always safeguard the confidentiality of FCI by controlling the posting of FCI on company-controlled websites or public forums, and the exposure of FCI in public presentations or on public displays. It is important to know which users are allowed to publish information on publicly accessible systems, like your company website, and implement a review process before posting such information. If FCI is discovered on a publicly accessible system, procedures should be in place to remove that information and alert the appropriate parties.",
+        "implementation_guidance": "Do not allow FCI to become public always safeguard the confidentiality of FCI by controlling the posting of FCI on company-controlled websites or public forums, and the exposure of FCI in public presentations or on public displays. It is important to know which users are allowed to publish information on publicly accessible systems, like your company website, and implement a review process before posting such information. If FCI is discovered on a publicly accessible system, procedures should be in place to remove that information and alert the appropriate parties. Example: Your company decides to start issuing press releases about its projects in an effort to reach more potential customers. Your company receives FCI from the government as part of its DoD contract. Because you recognize the need to manage controlled information, including FCI, you meet with the employees who write the releases and post information to establish a review process. It is decided that you will review press releases for FCI before posting it on the company website. Only certain employees will be authorized to post to the website.",
+        "asset_types": [
+            "Publicly Accessible Information Systems",
+            "Websites",
+            "Information",
+            "FCI"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "IA.L1-3.5.1",
+        "family_id": "IA",
+        "family_name": "Identification and Authentication",
+        "title": "Identification",
+        "description": "Identify information system users, processes acting on behalf of users, or devices.",
+        "discussion": "Common device identifiers include media access control (MAC), Internet Protocol (IP) addresses, or device-unique token identifiers. Management of individual identifiers is not applicable to shared system accounts. Typically, individual identifiers are the user names associated with the system accounts assigned to those individuals. Organizations may require unique identification of individuals in group accounts or for detailed accountability of individual activity. In addition, this requirement addresses individual identifiers that are not necessarily associated with system accounts. Organizational devices requiring identification may be defined by type, by device, or by a combination of type/device. NIST SP 800-63-3 provides guidance on digital identities. Make sure to assign individual, unique identifiers (e.g., user names) to all users and processes that access company systems. Authorized devices also should have unique identifiers. Unique identifiers can be as simple as a short set of alphanumeric characters (e.g., SW001 could refer to a network switch, SW002 could refer to a different network switch). This practice, IA.L1-3.5.1, provides a vetted and trusted identity that supports the access control mechanism required by AC.L1-3.1.1.",
+        "implementation_guidance": "Make sure to assign individual, unique identifiers (e.g., user names) to all users and processes that access company systems. Authorized devices also should have unique identifiers. Unique identifiers can be as simple as a short set of alphanumeric characters (e.g., SW001 could refer to a network switch, SW002 could refer to a different network switch). Example: You want to make sure that all employees working on a project can access important information about it. Because this is work for the DoD and may contain FCI, you also need to prevent employees who are not working on that project from being able to access the information. You assign each employee is assigned a unique user ID, which they use to log into the system.",
+        "asset_types": [
+            "Information Systems",
+            "Users",
+            "Processes",
+            "Devices",
+            "Accounts"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "IA.L1-3.5.2",
+        "family_id": "IA",
+        "family_name": "Identification and Authentication",
+        "title": "Authentication",
+        "description": "Authenticate (or verify) the identities of those users, processes, or devices, as a prerequisite to allowing access to organizational information systems.",
+        "discussion": "Individual authenticators include the following: passwords, key cards, cryptographic devices, and one-time password devices. Initial authenticator content is the actual content of the authenticator, for example, the initial password. In contrast, the requirements about authenticator content include the minimum password length. Developers ship system components with factory default authentication credentials to allow for initial installation and configuration. Default authentication credentials are often well known, easily discoverable, and present a significant security risk. Systems support authenticator management by organization-defined settings and restrictions for various authenticator characteristics including minimum password length, validation time window for time synchronous one-time tokens, and number of allowed rejections during the verification stage of biometric authentication. Authenticator management includes issuing and revoking, when no longer needed, authenticators for temporary access such as that required for remote maintenance. Device authenticators include certificates and passwords. NIST SP 800-63-3 provides guidance on digital identities. Before you let a person or a device have access to your system, verify that the user or device is who or what it claims to be. This verification is called authentication. The most common way to verify identity is using a username and a hard-to-guess password. Some devices ship with default usernames and passwords. For example, some devices ship so that when you first log on to the device, the username is \"admin\" and the password is \"admin\". When you have devices with this type of default username and password, immediately change the default password to a unique password you create. Default passwords may be well known to the public, easily found in a search, or easy to guess, allowing an unauthorized person to access your system.",
+        "implementation_guidance": "Before you let a person or a device have access to your system, verify that the user or device is who or what it claims to be. This verification is called authentication. The most common way to verify identity is using a username and a hard-to-guess password. Some devices ship with default usernames and passwords. For example, some devices ship so that when you first log on to the device, the username is \"admin\" and the password is \"admin\". When you have devices with this type of default username and password, immediately change the default password to a unique password you create. Default passwords may be well known to the public, easily found in a search, or easy to guess, allowing an unauthorized person to access your system. Example 1: You are in charge of purchasing. You know that some laptops come with a default username and password. You notify IT that all default passwords should be reset prior to laptop use. You ask IT to explain the importance of resetting default passwords and convey how easily they are discovered using internet searches during next week's cybersecurity awareness training. Example 2: Your company decides to use cloud services for email and other capabilities. Upon reviewing this practice, you realize every user or device that connects to the cloud service must be authenticated. As a result, you work with your cloud service provider to ensure that only properly authenticated users and devices are allowed to connect to the system.",
+        "asset_types": [
+            "Information Systems",
+            "Users",
+            "Processes",
+            "Devices",
+            "Authenticators (Passwords, Key Cards, Certificates, Tokens)",
+            "Cloud Services",
+            "Laptops"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "MP.L1-3.8.3",
+        "family_id": "MP",
+        "family_name": "Media Protection",
+        "title": "Media Disposal",
+        "description": "Sanitize or destroy information system media containing Federal Contract Information before disposal or release for reuse.",
+        "discussion": "This requirement applies to all system media, digital and non-digital, subject to disposal or reuse. Examples include: digital media found in workstations, network components, scanners, copiers, printers, notebook computers, and mobile devices; and non-digital media such as paper and microfilm. The sanitization process removes information from the media such that the information cannot be retrieved or reconstructed. Sanitization techniques, including clearing, purging, cryptographic erase, and destruction, prevent the disclosure of information to unauthorized individuals when such media is released for reuse or disposal. Organizations determine the appropriate sanitization methods, recognizing that destruction may be necessary when other methods cannot be applied to the media requiring sanitization. Organizations use discretion on the employment of sanitization techniques and procedures for media containing information that is in the public domain or publicly releasable or deemed to have no adverse impact on organizations or individuals if released for reuse or disposal. Sanitization of non-digital media includes destruction, removing FCI from documents, or redacting selected sections or words from a document by obscuring the redacted sections or words in a manner equivalent in effectiveness to removing the words or sections from the document. NARA policy and guidance control sanitization processes for federal contract information. NIST SP 800-88 provides guidance on media sanitization. \"Media\" refers to a broad range of items that store information, including paper documents, disks, tapes, digital photography, USB drives, CDs, DVDs, and mobile phones. It is important to know what information is on media so that you can handle it properly. If there is FCI, you or someone in your company should either shred or destroy the device before disposal so it cannot be read; or clean or purge the information, if you want to reuse the device.",
+        "implementation_guidance": "\"Media\" refers to a broad range of items that store information, including paper documents, disks, tapes, digital photography, USB drives, CDs, DVDs, and mobile phones. It is important to know what information is on media so that you can handle it properly. If there is FCI, you or someone in your company should either: shred or destroy the device before disposal so it cannot be read; or clean or purge the information, if you want to reuse the device. See NIST Special Publication 800-88, Revision 1, Guidelines for Media Sanitization, for more information. Example: As you pack for an office move, you find some old CDs in a file cabinet. You determine that one has information about an old project your company did for the DoD. You shred the CD rather than simply throwing it in the trash.",
+        "asset_types": [
+            "System Media (Digital and Non-Digital)",
+            "Workstations",
+            "Network Components",
+            "Scanners",
+            "Copiers",
+            "Printers",
+            "Notebook Computers",
+            "Mobile Devices",
+            "Paper",
+            "Microfilm",
+            "Disks",
+            "Tapes",
+            "USB Drives",
+            "CDs",
+            "DVDs"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "PE.L1-3.10.1",
+        "family_id": "PE",
+        "family_name": "Physical Protection",
+        "title": "Limit Physical Access",
+        "description": "Limit physical access to organizational information systems, equipment, and the respective operating environments to authorized individuals.",
+        "discussion": "This requirement applies to employees, individuals with permanent physical access authorization credentials, and visitors. Authorized individuals have credentials that include badges, identification cards, and smart cards. Organizations determine the strength of authorization credentials needed consistent with applicable laws, directives, policies, regulations, standards, procedures, and guidelines. This requirement applies only to areas within facilities that have not been designated as publicly accessible. Limiting physical access to equipment may include placing equipment in locked rooms or other secured areas and allowing access to authorized individuals only, and placing equipment in locations that can be monitored by organizational personnel. Computing devices, external disk drives, networking devices, monitors, printers, copiers, scanners, facsimile machines, and audio devices are examples of equipment. This addresses the company's physical space (e.g., office, testing environments, equipment rooms), technical assets, and non-technical assets that need to be protected from unauthorized physical access. Specific environments are limited to authorized employees, and access is controlled with badges, electronic locks, physical key locks, etc. Output devices, such as printers, are placed in areas where their use does not expose data to unauthorized individuals. Lists of personnel with authorized access are developed and maintained, and personnel are issued appropriate authorization credentials.",
+        "implementation_guidance": "This addresses the company's physical space (e.g., office, testing environments, equipment rooms), technical assets, and non-technical assets that need to be protected from unauthorized physical access. Specific environments are limited to authorized employees, and access is controlled with badges, electronic locks, physical key locks, etc. Output devices, such as printers, are placed in areas where their use does not expose data to unauthorized individuals. Lists of personnel with authorized access are developed and maintained, and personnel are issued appropriate authorization credentials. Example: You manage a DoD project that requires special equipment used only by project team members. You work with the facilities manager to put locks on the doors to the areas where the equipment is stored and used. Project team members are the only individuals issued with keys to the space. This restricts access to only those employees who work on the DoD project and require access to that equipment.",
+        "asset_types": [
+            "Information Systems",
+            "Equipment (Computing Devices, Disk Drives, Networking Devices, Monitors, Printers, Copiers, Scanners, Fax Machines, Audio Devices)",
+            "Operating Environments",
+            "Physical Facilities",
+            "Authorization Credentials (Badges, ID Cards, Smart Cards)",
+            "Locks"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "PE.L1-3.10.3",
+        "family_id": "PE",
+        "family_name": "Physical Protection",
+        "title": "Escort Visitors",
+        "description": "Escort visitors and monitor visitor activity.",
+        "discussion": "Individuals with permanent physical access authorization credentials are not considered visitors. Audit logs can be used to monitor visitor activity. Do not allow visitors, even those people you know well, to walk around your facility without an escort. Make sure that all non-employees wear special visitor badges and/or are escorted by an employee at all times while on the property.",
+        "implementation_guidance": "Do not allow visitors, even those people you know well, to walk around your facility without an escort. Make sure that all non-employees wear special visitor badges and/or are escorted by an employee at all times while on the property. Example: Coming back from a meeting, you see the friend of a coworker walking down the hallway near your office. You know this person well and trust them, but are not sure why they are in the building. You stop to talk, and the person explains that they are meeting a coworker for lunch, but cannot remember where the lunchroom is. You walk the person back to the reception area to get a visitor badge and wait until someone can escort them to the lunch room. You report this incident, and the company decides to install a badge reader at the main door so visitors cannot enter without an escort.",
+        "asset_types": [
+            "Physical Facilities",
+            "Visitors",
+            "Visitor Badges",
+            "Audit Logs"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "PE.L1-3.10.4",
+        "family_id": "PE",
+        "family_name": "Physical Protection",
+        "title": "Physical Access Logs",
+        "description": "Maintain audit logs of physical access.",
+        "discussion": "Organizations have flexibility in the types of audit logs employed. Audit logs can be procedural (e.g., written log of individuals accessing the facility), automated (e.g., capturing ID provided by a Personal Identity Verification (PIV) card), or some combination thereof. Physical access points can include facility access points, interior access points to systems or system components requiring supplemental access controls, or both. System components (e.g., workstations, notebook computers) may be in areas designated as publicly accessible with organizations safeguarding access to such devices. Make sure you have a record of who accesses your facility (e.g., office, plant, factory). You can do this in writing by having employees and visitors sign in and sign out or by electronic means such as badge readers. Whatever means you use, you need to retain the access records for the time period that your company has defined.",
+        "implementation_guidance": "Make sure you have a record of who accesses your facility (e.g., office, plant, factory). You can do this in writing by having employees and visitors sign in and sign out or by electronic means such as badge readers. Whatever means you use, you need to retain the access records for the time period that your company has defined. Example: You and your coworkers like to have friends and family join you for lunch at the office on Fridays. Your small company has just signed a contract with the DoD, however, and you now need to document who enters and leaves your facility. You work with the reception staff to ensure that all non-employees sign in at the reception area and sign out when they leave. You retain those paper sign-in sheets in a locked filing cabinet for one year. Employees receive badges or key cards that enable tracking and logging access to company facilities.",
+        "asset_types": [
+            "Physical Facilities",
+            "Audit Logs (Physical Access)",
+            "Access Records",
+            "Sign-in Sheets",
+            "Badge Readers",
+            "Badges",
+            "Key Cards"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "PE.L1-3.10.5",
+        "family_id": "PE",
+        "family_name": "Physical Protection",
+        "title": "Manage Physical Access Devices",
+        "description": "Control and manage physical access devices.",
+        "discussion": "Physical access devices include keys, locks, combinations, and card readers. Identifying and controlling physical access devices (e.g., locks, badges, key cards) is just as important as monitoring and limiting who is able to physically access certain equipment. Physical access devices are only strong protection if you know who has them and what access they allow. Physical access devices can be managed using manual or automatic processes such a list of who is assigned what key, or updating the badge access system as personnel change roles.",
+        "implementation_guidance": "Identifying and controlling physical access devices (e.g., locks, badges, key cards) is just as important as monitoring and limiting who is able to physically access certain equipment. Physical access devices are only strong protection if you know who has them and what access they allow. Physical access devices can be managed using manual or automatic processes such a list of who is assigned what key, or updating the badge access system as personnel change roles. Example: You are a facility manager. A team member retired today and returns their company keys to you. The project on which they were working requires access to areas that contain equipment with FCI. You receive the keys, check your electronic records against the serial numbers on the keys to ensure all have been returned, and mark each key returned.",
+        "asset_types": [
+            "Physical Access Devices (Keys, Locks, Combinations, Card Readers, Badges)"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "SC.L1-3.13.1",
+        "family_id": "SC",
+        "family_name": "System and Communications Protection",
+        "title": "Boundary Protection",
+        "description": "Monitor, control, and protect organizational communications (i.e., information transmitted or received by organizational information systems) at the external boundaries and key internal boundaries of the information systems.",
+        "discussion": "Communications can be monitored, controlled, and protected at boundary components and by restricting or prohibiting interfaces in organizational systems. Boundary components include gateways, routers, firewalls, guards, network-based malicious code analysis and virtualization systems, or encrypted tunnels implemented within a system security architecture (e.g., routers protecting firewalls or application gateways residing on protected subnetworks). Restricting or prohibiting interfaces in organizational systems includes restricting external web communications traffic to designated web servers within managed interfaces and prohibiting external traffic that appears to be spoofing internal addresses. Organizations consider the shared nature of commercial telecommunications services in the implementation of security requirements associated with the use of such services. Commercial telecommunications services are commonly based on network components and consolidated management systems shared by all attached commercial customers and may also include third party-provided access lines and other service elements. Such transmission services may represent sources of increased risk despite contract security provisions. NIST SP 800-41 provides guidance on firewalls and firewall policy. NIST SP 800-125B provides guidance on security for virtualization technologies. Fences, locks, badges, and key cards help keep non-employees out of your physical facilities. Similarly, your company's IT network or system has boundaries that must be protected. Many companies use a web proxy and a firewall. When an employee uses a company computer to go to a website, a web proxy makes the request on the user's behalf, looks at the web request, and decides if it should let the employee go to the website. A firewall controls access from the inside and outside, protecting valuable information and resources stored on the company's network. A firewall stops unwanted traffic on the internet from passing through an outside \"fence\" to the company's networks and information systems. Internal boundaries determine where data can flow, for instance a software development environment may have its own boundary controlling, monitoring, and protecting the data that can leave that boundary. You may want to monitor, control, or protect one part of the company network from another. This can also be accomplished with a firewall and limits the ability of attackers and disgruntled employees from entering sensitive parts of your internal network and causing damage.",
+        "implementation_guidance": "Fences, locks, badges, and key cards help keep non-employees out of your physical facilities. Similarly, your company's IT network or system has boundaries that must be protected. Many companies use a web proxy and a firewall. When an employee uses a company computer to go to a website, a web proxy makes the request on the user's behalf, looks at the web request, and decides if it should let the employee go to the website. A firewall controls access from the inside and outside, protecting valuable information and resources stored on the company's network. A firewall stops unwanted traffic on the internet from passing through an outside \"fence\" to the company's networks and information systems. Internal boundaries determine where data can flow, for instance a software development environment may have its own boundary controlling, monitoring, and protecting the data that can leave that boundary. You may want to monitor, control, or protect one part of the company network from another. This can also be accomplished with a firewall and limits the ability of attackers and disgruntled employees from entering sensitive parts of your internal network and causing damage. Example: You are setting up the new network and want to keep your company's information and resources safe. You start by sketching out a simple diagram that identifies the external boundary of your network and any internal boundaries that are needed. The first piece of equipment you install is the firewall, a device to separate your internal network from the internet. The firewall also has a feature that allows you to block access to potentially malicious websites, and you configure that service as well. Some of your coworkers complain that they cannot get onto certain websites. You explain that the new network blocks websites that are known for spreading malware. The firewall sends you a daily digest of blocked activity so that you can monitor the system for attack trends.",
+        "asset_types": [
+            "Information Systems",
+            "Networks",
+            "Communications",
+            "Boundary Components (Gateways, Routers, Firewalls, Guards, Virtualization Systems, Encrypted Tunnels)",
+            "Web Proxies",
+            "Telecommunication Services"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "SC.L1-3.13.5",
+        "family_id": "SC",
+        "family_name": "System and Communications Protection",
+        "title": "Public-Access System Separation",
+        "description": "Implement subnetworks for publicly accessible system components that are physically or logically separated from internal networks.",
+        "discussion": "Subnetworks that are physically or logically separated from internal networks are referred to as demilitarized zones (DMZs). DMZs are typically implemented with boundary control devices and techniques that include routers, gateways, firewalls, virtualization, or cloud-based technologies. NIST SP 800-41 provides guidance on firewalls and firewall policy. SP 800-125B provides guidance on security for virtualization technologies. Separate the publicly accessible systems from the internal systems that need to be protected. Do not place internal systems on the same network as the publicly accessible systems and block access by default from DMZ networks to internal networks. One method of accomplishing this is to create a DMZ network, which enhances security by providing public access to a specific set of resources while preventing connections from those resources to the rest of the IT environment. Some contractors achieve a similar result through the use of a cloud computing environment that is separated from the rest of the company's infrastructure.",
+        "implementation_guidance": "Separate the publicly accessible systems from the internal systems that need to be protected. Do not place internal systems on the same network as the publicly accessible systems and block access by default from DMZ networks to internal networks. One method of accomplishing this is to create a DMZ network (DMZ), which enhances security by providing public access to a specific set of resources while preventing connections from those resources to the rest of the IT environment. Some contractors achieve a similar result through the use of a cloud computing environment that is separated from the rest of the company's infrastructure. Example: The head of recruiting at your firm wants to launch a website to post job openings and allow the public to download an application form. After some discussion, your team realizes it needs to use a firewall to create a perimeter network (DMZ) to do this. You host the server separately from the company's internal network and make sure the network on which it resides is isolated with the proper firewall rules.",
+        "asset_types": [
+            "Publicly Accessible System Components",
+            "Subnetworks (DMZs)",
+            "Internal Networks",
+            "Boundary Control Devices (Routers, Gateways, Firewalls)",
+            "Virtualization Technologies",
+            "Cloud Computing Environments",
+            "Web Servers"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "SI.L1-3.14.1",
+        "family_id": "SI",
+        "family_name": "System and Information Integrity",
+        "title": "Flaw Remediation",
+        "description": "Identify, report, and correct information and information system flaws in a timely manner.",
+        "discussion": "Organizations identify systems that are affected by announced software and firmware flaws including potential vulnerabilities resulting from those flaws and report this information to designated personnel with information security responsibilities. Security-relevant updates include patches, service packs, hot fixes, and anti-virus signatures. Organizations address flaws discovered during security assessments, continuous monitoring, incident response activities, and system error handling. Organizations can take advantage of available resources such as the Common Weakness Enumeration (CWE) database or Common Vulnerabilities and Exposures (CVE) database in remediating flaws discovered in organizational systems. Organization-defined time periods for updating security-relevant software and firmware may vary based on a variety of factors including the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw). Some types of flaw remediation may require more testing than other types of remediation. NIST SP 800-40 provides guidance on patch management technologies. All software and firmware have potential flaws. Many vendors work to remedy those flaws by releasing vulnerability information and updates to their software and firmware. Contractors must have a process to review relevant vendor notifications and updates about problems or weaknesses. After reviewing the information, the contractor must implement a patch management process that allows for software and firmware flaws to be fixed without adversely affecting the system functionality. Contractors must define the time frames within which flaws are identified, reported, and corrected for all systems. Contractors should consider purchasing support from their vendors to ensure timely access to updates.",
+        "implementation_guidance": "All software and firmware have potential flaws. Many vendors work to remedy those flaws by releasing vulnerability information and updates to their software and firmware. Contractors must have a process to review relevant vendor notifications and updates about problems or weaknesses. After reviewing the information, the contractor must implement a patch management process that allows for software and firmware flaws to be fixed without adversely affecting the system functionality. Contractors must define the time frames within which flaws are identified, reported, and corrected for all systems. Contractors should consider purchasing support from their vendors to ensure timely access to updates. Example: You know that software vendors typically release patches, service packs, hot fixes, etc. and want to make sure your software is up to date. You develop a policy that requires checking vendor websites for flaw notifications every week. The policy further requires that those flaws be assessed for severity and patched on end-user computers once each week and servers once each month. Consistent with that policy, you configure the system to check for updates weekly or daily depending on the criticality of the software. Your team reviews available updates and implements the applicable ones according to the defined schedule.",
+        "asset_types": [
+            "Information Systems",
+            "Software",
+            "Firmware",
+            "Security Updates (Patches, Service Packs, Hot Fixes)"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "SI.L1-3.14.2",
+        "family_id": "SI",
+        "family_name": "System and Information Integrity",
+        "title": "Malicious Code Protection",
+        "description": "Provide protection from malicious code at appropriate locations within organizational information systems.",
+        "discussion": "Designated locations include system entry and exit points which may include firewalls, remote access servers, workstations, electronic mail servers, web servers, proxy servers, notebook computers, and mobile devices. Malicious code includes viruses, worms, Trojan horses, and spyware. Malicious code can be encoded in various formats (e.g., UUENCODE, Unicode), contained within compressed or hidden files, or hidden in files using techniques such as steganography. Malicious code can be inserted into systems in a variety of ways including web accesses, electronic mail, electronic mail attachments, and portable storage devices. Malicious code insertions occur through the exploitation of system vulnerabilities. Malicious code protection mechanisms include anti-virus signature definitions and reputation-based technologies. A variety of technologies and methods exist to limit or eliminate the effects of malicious code. Pervasive configuration management and comprehensive software integrity controls may be effective in preventing execution of unauthorized code. In addition to commercial off-the-shelf software, malicious code may also be present in custom-built software. This could include logic bombs, back doors, and other types of cyber-attacks that could affect organizational missions/business functions. Traditional malicious code protection mechanisms cannot always detect such code. In these situations, organizations rely instead on other safeguards including secure coding practices, configuration management and control, trusted procurement processes, and monitoring practices to help ensure that software does not perform functions other than the functions intended. NIST SP 800-83 provides guidance on malware incident prevention. Malicious code purposely performs unauthorized activity that undermines the security of an information system. A designated location may be a network device such as a firewall or an end user's computer. Malicious code types include Virus, Spyware, Trojan Horse, and Ransomware. Use anti-malware tools to stop or lessen the impact of malicious code.",
+        "implementation_guidance": "Malicious code purposely performs unauthorized activity that undermines the security of an information system. A designated location may be a network device such as a firewall or an end user's computer. Use anti-malware tools to stop or lessen the impact of malicious code at appropriate locations (e.g., firewalls, servers, workstations, mobile devices). Example: You are buying a new computer and want to protect your company's information from viruses and spyware. You buy and install anti-malware software.",
+        "asset_types": [
+            "Information Systems",
+            "Firewalls",
+            "Remote Access Servers",
+            "Workstations",
+            "Email Servers",
+            "Web Servers",
+            "Proxy Servers",
+            "Notebook Computers",
+            "Mobile Devices",
+            "Portable Storage Devices",
+            "Software (Commercial, Custom)",
+            "Anti-Malware Tools"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "SI.L1-3.14.4",
+        "family_id": "SI",
+        "family_name": "System and Information Integrity",
+        "title": "Update Malicious Code Protection",
+        "description": "Update malicious code protection mechanisms when new releases are available.",
+        "discussion": "Malicious code protection mechanisms include anti-virus signature definitions and reputation-based technologies. A variety of technologies and methods exist to limit or eliminate the effects of malicious code. Pervasive configuration management and comprehensive software integrity controls may be effective in preventing execution of unauthorized code. In addition to commercial off-the-shelf software, malicious code may also be present in custom-built software. This could include logic bombs, back doors, and other types of cyber-attacks that could affect organizational missions/business functions. Traditional malicious code protection mechanisms cannot always detect such code. In these situations, organizations rely instead on other safeguards including secure coding practices, configuration management and control, trusted procurement processes, and monitoring practices to help ensure that software does not perform functions other than the functions intended. Malware changes on an hourly or daily basis, and it is important to update detection and protection mechanisms frequently to maintain the effectiveness of the protection.",
+        "implementation_guidance": "Malware changes on an hourly or daily basis, and it is important to update detection and protection mechanisms (like anti-malware software definitions) frequently to maintain the effectiveness of the protection. Configure mechanisms to update automatically or establish a process for regular manual updates. Example: You have installed anti-malware software to protect a computer from malicious code. Knowing that malware evolves rapidly, you configure the software to automatically check for malware definition updates every day and update as needed.",
+        "asset_types": [
+            "Malicious Code Protection Mechanisms (Anti-Virus Software, Reputation-Based Technologies)"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    },
+    {
+        "id": "SI.L1-3.14.5",
+        "family_id": "SI",
+        "family_name": "System and Information Integrity",
+        "title": "System & File Scanning",
+        "description": "Perform periodic scans of the information system and real-time scans of files from external sources as files are downloaded, opened, or executed.",
+        "discussion": "Periodic scans of organizational systems and real-time scans of files from external sources can detect malicious code. Malicious code can be encoded in various formats (e.g., UUENCODE, Unicode), contained within compressed or hidden files, or hidden in files using techniques such as steganography. Malicious code can be inserted into systems in a variety of ways including web accesses, electronic mail, electronic mail attachments, and portable storage devices. Malicious code insertions occur through the exploitation of system vulnerabilities. Use anti-malware software to scan for and identify viruses in your computer systems and determine how often scans are conducted. Real-time scans look at the system whenever new files are downloaded, opened, and saved. Periodic scans check previously saved files against updated malware information.",
+        "implementation_guidance": "Use anti-malware software to scan for and identify viruses in your computer systems and determine how often scans are conducted. Real-time scans look at the system whenever new files are downloaded, opened, and saved. Periodic scans check previously saved files against updated malware information. Example: You work with your company’s email provider to enable enhanced protections that will scan all attachments to identify and quarantine those that may be harmful prior to a user opening them. In addition, you configure antivirus software on each computer and to scan for malicious code every day. The software also scans files that are downloaded or copied from removable media such as USB drives. It quarantines any suspicious files and notifies the security team.",
+        "asset_types": [
+            "Information Systems",
+            "Files",
+            "External Sources (Web, Email, Portable Storage Devices like USB drives, CD-ROM)",
+            "Anti-Malware Software"
+        ],
+        "implementation_groups": [
+            1,
+            2,
+            3
+        ],
+        "priority": "Not Specified in Document"
+    }
+]
