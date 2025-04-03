@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1.1",
+    "family_id": "1",
+    "family_name": "Inventory and Control of Enterprise Assets",
+    "title": "Establish and Maintain Detailed Enterprise Asset Inventory",
+    "description": "Establish and maintain an accurate, detailed, and up-to-date inventory of all enterprise assets with the potential to store or process data, to include: end-user devices (including portable and mobile), network devices, non-computing/IoT devices, and servers. Ensure the inventory records the network address (if static), hardware address, machine name, enterprise asset owner, department for each asset, and whether the asset has been approved to connect to the network. For mobile end-user devices, MDM type tools can support this process, where appropriate. This inventory includes assets connected to the infrastructure physically, virtually, remotely, and those within cloud environments. Additionally, it includes assets that are regularly connected to the enterprise's network infrastructure, even if they are not under control of the enterprise. Review and update the inventory of all enterprise assets bi-annually, or more frequently.",
+    "asset_types": ["Devices"],
+    "implementation_groups": [1],
+    "implementation_guidance": "Use automated asset discovery tools to identify devices connected to the organization's network. Combine automatic and manual methods for a comprehensive inventory. Implement network access control solutions to detect and prevent unauthorized devices."
+  },
+  {
+    "id": "1.2",
+    "family_id": "1",
+    "family_name": "Inventory and Control of Enterprise Assets",
+    "title": "Address Unauthorized Assets",
+    "description": "Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset.",
+    "asset_types": ["Devices"],
+    "implementation_groups": [1],
+    "implementation_guidance": "Use network access control (NAC) solutions to block or quarantine unauthorized devices. Compare discovered assets against the authorized inventory on a weekly basis. Have a documented process for handling unauthorized assets."
+  },
+  {
+    "id": "2.1",
+    "family_id": "2",
+    "family_name": "Inventory and Control of Software Assets",
+    "title": "Establish and Maintain a Software Inventory",
+    "description": "Establish and maintain a detailed inventory of all licensed software installed on enterprise assets. The software inventory must document the title, publisher, initial install/use date, and business purpose for each entry; where appropriate, include the Uniform Resource Locator (URL), app store(s), version(s), deployment mechanism, decommission date, and number of licenses. Review and update the software inventory bi-annually, or more frequently.",
+    "asset_types": ["Software"],
+    "implementation_groups": [1],
+    "implementation_guidance": "Utilize software inventory tools to automatically capture software installed on systems. Maintain documentation on approved software and create a process for reviewing and updating the inventory regularly."
+  },
+  {
+    "id": "3.1",
+    "family_id": "3",
+    "family_name": "Data Protection",
+    "title": "Establish and Maintain a Data Management Process",
+    "description": "Establish and maintain a documented data management process. In the process, address data sensitivity, data owner, handling of data, data retention limits, and disposal requirements, based on sensitivity and retention standards for the enterprise. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "asset_types": ["Data"],
+    "implementation_groups": [1],
+    "implementation_guidance": "Create a data classification policy that defines sensitivity levels. Document data ownership, handling procedures, retention periods, and disposal methods for each classification level. Review and update annually."
+  },
+  {
+    "id": "3.3",
+    "family_id": "3",
+    "family_name": "Data Protection",
+    "title": "Configure Data Access Control Lists",
+    "description": "Configure data access control lists based on a user's need to know. Apply data access control lists, also known as access permissions, to local and remote file systems, databases, and applications.",
+    "asset_types": ["Data"],
+    "implementation_groups": [1],
+    "implementation_guidance": "Implement the principle of least privilege for data access. Review access permissions regularly to ensure they remain appropriate. Use role-based access control where possible."
+  },
+  {
+    "id": "4.1",
+    "family_id": "4",
+    "family_name": "Secure Configuration of Enterprise Assets and Software",
+    "title": "Establish and Maintain a Secure Configuration Process",
+    "description": "Establish and maintain a documented secure configuration process for enterprise assets (end-user devices, including portable and mobile, non-computing/IoT devices, and servers) and software (operating systems and applications). Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "asset_types": ["Documentation"],
+    "implementation_groups": [1],
+    "implementation_guidance": "Develop secure configuration baselines for different types of systems based on industry standards (e.g., CIS Benchmarks, DISA STIGs). Document the hardening process and maintain procedures for applying secure configurations."
+  },
+  {
+    "id": "5.2",
+    "family_id": "5",
+    "family_name": "Account Management",
+    "title": "Use Unique Passwords",
+    "description": "Use unique passwords for all enterprise assets. Best practice implementation includes, at a minimum, an 8-character password for accounts using Multi-Factor Authentication (MFA) and a 14-character password for accounts not using MFA.",
+    "asset_types": ["Users"],
+    "implementation_groups": [1],
+    "implementation_guidance": "Implement a password policy that requires complex, unique passwords. Consider using password managers to help users maintain unique passwords. Enforce minimum length and complexity requirements at the system level."
+  },
+  {
+    "id": "6.4",
+    "family_id": "6",
+    "family_name": "Access Control Management",
+    "title": "Require MFA for Remote Network Access",
+    "description": "Require MFA for remote network access.",
+    "asset_types": ["Users"],
+    "implementation_groups": [1],
+    "implementation_guidance": "Configure VPN and remote access solutions to require MFA. Implement MFA solutions that use multiple factors (something you know, something you have, something you are). Ensure all remote access methods enforce MFA requirements."
+  },
+  {
+    "id": "10.1",
+    "family_id": "10",
+    "family_name": "Malware Defenses",
+    "title": "Deploy and Maintain Anti-Malware Software",
+    "description": "Deploy and maintain anti-malware software on all enterprise assets.",
+    "asset_types": ["Devices"],
+    "implementation_groups": [1],
+    "implementation_guidance": "Install anti-malware solutions on all endpoints, servers, and, where possible, mobile devices. Ensure that the anti-malware software can be centrally managed and monitored. Configure real-time scanning of files and processes."
+  },
+  {
+    "id": "14.1",
+    "family_id": "14",
+    "family_name": "Security Awareness and Skills Training",
+    "title": "Establish and Maintain a Security Awareness Program",
+    "description": "Establish and maintain a security awareness program. The purpose of a security awareness program is to educate the enterprise's workforce on how to interact with enterprise assets and data in a secure manner. Conduct training at hire and, at a minimum, annually. Review and update content annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "asset_types": ["Documentation"],
+    "implementation_groups": [1],
+    "implementation_guidance": "Develop a comprehensive security awareness curriculum covering key security practices. Deliver training at onboarding and annually thereafter. Track completion rates and assess effectiveness through testing or simulated phishing."
+  }
+]

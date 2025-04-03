@@ -1,0 +1,192 @@
+[
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "1.1",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.1.18",
+    "relationship": "related",
+    "notes": "CIS 1.1 (Establish and Maintain Detailed Enterprise Asset Inventory) relates to NIST 800-171 3.1.18 requirement to control information system access, by helping identify and manage authorized devices.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.85
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "1.1",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.1.20",
+    "relationship": "related",
+    "notes": "CIS 1.1 (Establish and Maintain Detailed Enterprise Asset Inventory) helps implement NIST 800-171 3.1.20 requirement to verify and control connections to the information system.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.90
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "1.1",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.12.4",
+    "relationship": "related",
+    "notes": "CIS 1.1 (Establish and Maintain Detailed Enterprise Asset Inventory) supports NIST 800-171 3.12.4 requirement to develop and implement plans of action to correct security deficiencies by helping identify all assets that need to be secured.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.75
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "1.1",
+    "target_framework": "NIST-800-171-R3",
+    "target_control": "03.01.20",
+    "relationship": "related",
+    "notes": "CIS 1.1 (Establish and Maintain Detailed Enterprise Asset Inventory) helps implement NIST 800-171 Rev 3 03.01.20 requirement to verify and control connections to the information system.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.90
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "1.1",
+    "target_framework": "NIST-800-171-R3",
+    "target_control": "03.04.10",
+    "relationship": "related",
+    "notes": "CIS 1.1 (Establish and Maintain Detailed Enterprise Asset Inventory) supports NIST 800-171 Rev 3 03.04.10 requirement to document system components as part of configuration management.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.85
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "1.1",
+    "target_framework": "CMMC-L2-V2.0",
+    "target_control": "CA.L2-3.12.4",
+    "relationship": "related",
+    "notes": "CIS 1.1 (Establish and Maintain Detailed Enterprise Asset Inventory) supports CMMC L2 CA.L2-3.12.4 requirement to develop and implement plans of action to correct security deficiencies by helping identify all assets that need to be secured.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.75
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "1.1",
+    "target_framework": "CMMC-L2-V2.0",
+    "target_control": "CM.L2-3.4.1",
+    "relationship": "related",
+    "notes": "CIS 1.1 (Establish and Maintain Detailed Enterprise Asset Inventory) enables CMMC L2 CM.L2-3.4.1 requirement to establish and maintain baseline configurations by providing a detailed inventory of assets that need configuration management.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.85
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "1.2",
+    "target_framework": "CMMC-L1-V2.0",
+    "target_control": "AC.L1-3.1.1",
+    "relationship": "related",
+    "notes": "CIS 1.2 (Address Unauthorized Assets) helps implement CMMC L1 AC.L1-3.1.1 requirement to limit information system access to authorized users by enabling the identification and handling of unauthorized devices.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.80
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "1.2",
+    "target_framework": "CMMC-L1-V2.0",
+    "target_control": "AC.L1-3.1.2",
+    "relationship": "related",
+    "notes": "CIS 1.2 (Address Unauthorized Assets) helps implement CMMC L1 AC.L1-3.1.2 requirement to limit information system access to authorized transactions and functions by ensuring only authorized devices can connect to the network.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.75
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "3.3",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.1.1",
+    "relationship": "exact",
+    "notes": "CIS 3.3 (Configure Data Access Control Lists) directly implements NIST 800-171 3.1.1 requirement to limit system access to authorized users.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.95
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "3.3",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.1.2",
+    "relationship": "exact",
+    "notes": "CIS 3.3 (Configure Data Access Control Lists) directly implements NIST 800-171 3.1.2 requirement to limit system access to the types of transactions and functions that authorized users are permitted to execute.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.95
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "3.3",
+    "target_framework": "NIST-800-171-R3",
+    "target_control": "03.01.01",
+    "relationship": "exact",
+    "notes": "CIS 3.3 (Configure Data Access Control Lists) directly implements NIST 800-171 Rev 3 03.01.01 requirement to limit system access to authorized users.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.95
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "3.3",
+    "target_framework": "NIST-800-171-R3",
+    "target_control": "03.01.02",
+    "relationship": "exact",
+    "notes": "CIS 3.3 (Configure Data Access Control Lists) directly implements NIST 800-171 Rev 3 03.01.02 requirement to limit system access to the types of transactions and functions that authorized users are permitted to execute.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.95
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "6.4",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.5.3",
+    "relationship": "exact",
+    "notes": "CIS 6.4 (Require MFA for Remote Network Access) directly implements NIST 800-171 3.5.3 requirement to use multifactor authentication for local and network access to privileged accounts and for network access to non-privileged accounts.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.95
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "6.4",
+    "target_framework": "NIST-800-171-R3",
+    "target_control": "03.05.03",
+    "relationship": "exact",
+    "notes": "CIS 6.4 (Require MFA for Remote Network Access) directly implements NIST 800-171 Rev 3 03.05.03 requirement to use multifactor authentication for network access to privileged and non-privileged accounts.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.95
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "10.1",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.14.2",
+    "relationship": "exact",
+    "notes": "CIS 10.1 (Deploy and Maintain Anti-Malware Software) directly implements NIST 800-171 3.14.2 requirement to provide protection from malicious code at appropriate locations within organizational information systems.",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "10.1",
+    "target_framework": "NIST-800-171-R3",
+    "target_control": "03.14.02",
+    "relationship": "exact",
+    "notes": "CIS 10.1 (Deploy and Maintain Anti-Malware Software) directly implements NIST 800-171 Rev 3 03.14.02 requirement to provide protection from malicious code at appropriate locations within organizational information systems.",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "14.1",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.2.1",
+    "relationship": "exact",
+    "notes": "CIS 14.1 (Establish and Maintain a Security Awareness Program) directly implements NIST 800-171 3.2.1 requirement to ensure that managers, system administrators, and users of organizational systems are made aware of the security risks associated with their activities and of the applicable policies, standards, and procedures related to the security of those systems.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.95
+  },
+  {
+    "source_framework": "CIS-CSC-V8.1",
+    "source_control": "14.1",
+    "target_framework": "NIST-800-171-R3",
+    "target_control": "03.02.01",
+    "relationship": "exact",
+    "notes": "CIS 14.1 (Establish and Maintain a Security Awareness Program) directly implements NIST 800-171 Rev 3 03.02.01 requirement to ensure that managers, system administrators, and users of organizational systems are made aware of the security risks associated with their activities and of the applicable policies, standards, and procedures related to the security of those systems.",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.95
+  }
+]

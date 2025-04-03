@@ -1,0 +1,13 @@
+{
+  "standard": "CIS Critical Security Controls",
+  "version": "v8.1",
+  "title": "CIS Critical Security Controls",
+  "publication_date": "2023-01-10",
+  "status": "Active",
+  "source_organization": "Center for Internet Security (CIS)",
+  "purpose": "Provides a prioritized set of actions to protect organizations and data from known cyber attack vectors",
+  "focus": "Cybersecurity best practices and safeguards",
+  "applicability": "Applicable to any organization seeking to improve their security posture against common threats",
+  "url": "https://www.cisecurity.org/controls/",
+  "basis": "Based on real-world attack data and contributed expertise from a broad community of security practitioners"
+}

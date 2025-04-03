@@ -1,0 +1,282 @@
+[
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.01",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.1.1",
+    "relationship": "exact",
+    "notes": "NIST 800-171 R3 control 03.01.01 is the same requirement as NIST 800-171 R2 3.1.1, with updated control ID format",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.01",
+    "target_framework": "CMMC-L2-V2.0",
+    "target_control": "AC.L2-3.1.1",
+    "relationship": "exact",
+    "notes": "CMMC L2 AC.L2-3.1.1 implements the same requirement as NIST 800-171 R3 03.01.01 to limit system access to authorized users",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.01",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "3.3",
+    "relationship": "related",
+    "notes": "CIS 3.3 (Configure Data Access Control Lists) implements the requirement to limit system access to authorized users",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.9
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.01",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "13.9",
+    "relationship": "related",
+    "notes": "CIS 13.9 (Deploy Port-Level Access Control) supports the requirement to limit system access to authorized users through network-level controls",
+    "mapping_source": "Derived",
+    "mapping_confidence": 0.75
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.02",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.1.2",
+    "relationship": "exact",
+    "notes": "NIST 800-171 R3 control 03.01.02 is the same requirement as NIST 800-171 R2 3.1.2, with updated control ID format",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.02",
+    "target_framework": "CMMC-L2-V2.0",
+    "target_control": "AC.L2-3.1.2",
+    "relationship": "exact",
+    "notes": "CMMC L2 AC.L2-3.1.2 implements the same requirement as NIST 800-171 R3 03.01.02 to limit system access to authorized transactions and functions",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.02",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "3.3",
+    "relationship": "related",
+    "notes": "CIS 3.3 (Configure Data Access Control Lists) implements the requirement to limit system access to authorized transactions and functions",
+    "mapping_source": "Official",
+    "mapping_confidence": 0.9
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.05",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.1.5",
+    "relationship": "exact",
+    "notes": "NIST 800-171 R3 control 03.01.05 is the same requirement as NIST 800-171 R2 3.1.5, with updated control ID format",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.05",
+    "target_framework": "CMMC-L2-V2.0",
+    "target_control": "AC.L2-3.1.5",
+    "relationship": "exact",
+    "notes": "CMMC L2 AC.L2-3.1.5 implements the same requirement as NIST 800-171 R3 03.01.05 to employ the principle of least privilege",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.05",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "6.8",
+    "relationship": "related",
+    "notes": "CIS 6.8 (Define and Maintain Role-Based Access Control) implements the principle of least privilege through role-based access control",
+    "mapping_source": "Derived",
+    "mapping_confidence": 0.85
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.05",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "12.2",
+    "relationship": "related",
+    "notes": "CIS 12.2 (Establish and Maintain a Secure Network Architecture) supports the principle of least privilege at the network level",
+    "mapping_source": "Derived",
+    "mapping_confidence": 0.7
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.10",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.1.11",
+    "relationship": "exact",
+    "notes": "NIST 800-171 R3 control 03.01.10 is the same requirement as NIST 800-171 R2 3.1.11, with updated control ID format",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.10",
+    "target_framework": "CMMC-L2-V2.0",
+    "target_control": "AC.L2-3.1.11",
+    "relationship": "exact",
+    "notes": "CMMC L2 AC.L2-3.1.11 implements the same requirement as NIST 800-171 R3 03.01.10 to terminate user sessions after defined conditions",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.01.10",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "4.3",
+    "relationship": "related",
+    "notes": "CIS 4.3 (Configure Automatic Session Locking on Enterprise Assets) implements the requirement to terminate sessions after periods of inactivity",
+    "mapping_source": "Derived",
+    "mapping_confidence": 0.85
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.02.01",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.2.1",
+    "relationship": "exact",
+    "notes": "NIST 800-171 R3 control 03.02.01 is the same requirement as NIST 800-171 R2 3.2.1, with updated control ID format",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.02.01",
+    "target_framework": "CMMC-L2-V2.0",
+    "target_control": "AT.L2-3.2.1",
+    "relationship": "exact",
+    "notes": "CMMC L2 AT.L2-3.2.1 implements the same requirement as NIST 800-171 R3 03.02.01 for security awareness",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.02.01",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "14.1",
+    "relationship": "exact",
+    "notes": "CIS 14.1 (Establish and Maintain a Security Awareness Program) directly implements the requirements for security awareness",
+    "mapping_source": "Derived",
+    "mapping_confidence": 0.95
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.02.01",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "14.2",
+    "relationship": "partial",
+    "notes": "CIS 14.2 (Train Workforce Members to Recognize Social Engineering Attacks) addresses a specific aspect of security awareness training",
+    "mapping_source": "Derived",
+    "mapping_confidence": 0.8
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.05.07",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.5.10",
+    "relationship": "exact",
+    "notes": "NIST 800-171 R3 control 03.05.07 is the same requirement as NIST 800-171 R2 3.5.10, with updated control ID format",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.05.07",
+    "target_framework": "CMMC-L2-V2.0",
+    "target_control": "IA.L2-3.5.10",
+    "relationship": "exact",
+    "notes": "CMMC L2 IA.L2-3.5.10 implements the same requirement as NIST 800-171 R3 03.05.07 for cryptographically-protected passwords",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.05.07",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "5.2",
+    "relationship": "related",
+    "notes": "CIS 5.2 (Use Unique Passwords) is related to the requirement for password protection but focuses on uniqueness rather than cryptographic protection",
+    "mapping_source": "Derived",
+    "mapping_confidence": 0.65
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.08.03",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.8.3",
+    "relationship": "exact",
+    "notes": "NIST 800-171 R3 control 03.08.03 is the same requirement as NIST 800-171 R2 3.8.3, with updated control ID format",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.08.03",
+    "target_framework": "CMMC-L1-V2.0",
+    "target_control": "MP.L1-3.8.3",
+    "relationship": "exact",
+    "notes": "CMMC L1 MP.L1-3.8.3 implements the same requirement as NIST 800-171 R3 03.08.03 for secure disposal of media",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.08.03",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "3.5",
+    "relationship": "exact",
+    "notes": "CIS 3.5 (Securely Dispose of Data) directly implements the requirement to securely dispose of media containing sensitive data",
+    "mapping_source": "Derived",
+    "mapping_confidence": 0.95
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.14.01",
+    "target_framework": "NIST-800-171-R2",
+    "target_control": "3.14.1",
+    "relationship": "exact",
+    "notes": "NIST 800-171 R3 control 03.14.01 is the same requirement as NIST 800-171 R2 3.14.1, with updated control ID format",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.14.01",
+    "target_framework": "CMMC-L1-V2.0",
+    "target_control": "SI.L1-3.14.1",
+    "relationship": "exact",
+    "notes": "CMMC L1 SI.L1-3.14.1 implements the same requirement as NIST 800-171 R3 03.14.01 for identifying and correcting system flaws",
+    "mapping_source": "Official",
+    "mapping_confidence": 1.0
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.14.01",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "7.7",
+    "relationship": "related",
+    "notes": "CIS 7.7 (Remediate Detected Vulnerabilities) addresses the remediation aspect of the requirement to identify, report, and correct system flaws",
+    "mapping_source": "Derived",
+    "mapping_confidence": 0.8
+  },
+  {
+    "source_framework": "NIST-800-171-R3",
+    "source_control": "03.14.01",
+    "target_framework": "CIS-CSC-V8.1",
+    "target_control": "12.1",
+    "relationship": "related",
+    "notes": "CIS 12.1 (Ensure Network Infrastructure is Up-to-Date) supports the requirement by ensuring network components are updated to address known flaws",
+    "mapping_source": "Derived", 
+    "mapping_confidence": 0.7
+  }
+]

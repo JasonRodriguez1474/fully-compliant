@@ -1,0 +1,122 @@
+[
+  {
+    "id": "03.01.01",
+    "family_id": "03.01",
+    "family_name": "Access Control",
+    "category_id": "03.01",
+    "category_name": "Access Control",
+    "title": "Limit system access to authorized users, processes acting on behalf of authorized users, and devices",
+    "description": "Limit system access to authorized users, processes acting on behalf of authorized users, and devices (including other systems).",
+    "discussion": "Access control policies (e.g., identity or role-based policies, control matrices, and cryptography) control access between active entities or subjects (i.e., users or processes acting on behalf of users) and passive entities or objects (e.g., devices, files, records, and domains) in systems. Access enforcement mechanisms can be employed at the application and service level to provide increased information security. Other systems include systems internal and external to the organization. This requirement focuses on account management for systems and applications. The definition of and enforcement of access authorizations, other than those determined by account type (e.g., privileged verses non-privileged) are addressed in requirement 03.01.02.",
+    "assessment_procedures": "ASSESSMENT OBJECTIVE: Determine if the organization limits system access to authorized users, processes acting on behalf of authorized users, and devices (including other systems).",
+    "priority": "P1"
+  },
+  {
+    "id": "03.01.02",
+    "family_id": "03.01",
+    "family_name": "Access Control",
+    "category_id": "03.01",
+    "category_name": "Access Control",
+    "title": "Limit system access to the types of transactions and functions that authorized users are permitted to execute",
+    "description": "Limit system access to the types of transactions and functions that authorized users are permitted to execute.",
+    "discussion": "Organizations may choose to define access privileges or other attributes by account, by type of account, or a combination of both. System account types include individual, shared, group, system, anonymous, guest, emergency, developer, manufacturer, vendor, and temporary. Other attributes required for authorizing access include restrictions on time-of-day, day-of-week, and point-of-origin. In defining other account attributes, organizations consider system-related requirements (e.g., system upgrades scheduled maintenance) and mission or business requirements, (e.g., time zone differences, customer requirements, remote access to support travel requirements).",
+    "assessment_procedures": "ASSESSMENT OBJECTIVE: Determine if the organization limits system access to the types of transactions and functions that authorized users are permitted to execute.",
+    "priority": "P1"
+  },
+  {
+    "id": "03.01.05",
+    "family_id": "03.01",
+    "family_name": "Access Control",
+    "category_id": "03.01",
+    "category_name": "Access Control",
+    "title": "Employ the principle of least privilege",
+    "description": "Employ the principle of least privilege, including for specific security functions and privileged accounts.",
+    "discussion": "Organizations employ the principle of least privilege for specific duties and systems (including specific functions, ports, protocols, and services). The principle of least privilege is applied with the goal of authorized privileges no higher than necessary to accomplish required organizational missions or business functions. Organizations consider the creation of additional processes, roles, and system accounts as necessary to achieve least privilege. Organizations also apply least privilege to the development, implementation, and operation of organizational systems. Security functions include establishing system accounts, setting events to be logged, setting intrusion detection parameters, and configuring access authorizations (i.e., permissions, privileges). Privileged accounts, including super user accounts, are typically described as system administrator for various types of commercial off-the-shelf operating systems. Restricting privileged accounts to specific personnel or roles prevents day-to-day users from executing privileged functions and having access to privileged information. Organizations may differentiate in the application of this requirement between allowed privileges for local accounts and for domain accounts provided that they retain the ability to control system configurations for key parameters and as otherwise necessary to sufficiently mitigate risk.",
+    "assessment_procedures": "ASSESSMENT OBJECTIVE: Determine if the organization employs the principle of least privilege, including for specific security functions and privileged accounts.",
+    "priority": "P1"
+  },
+  {
+    "id": "03.01.10",
+    "family_id": "03.01",
+    "family_name": "Access Control",
+    "category_id": "03.01",
+    "category_name": "Access Control",
+    "title": "Terminate sessions",
+    "description": "Terminate (automatically) a user session after a defined condition.",
+    "discussion": "This requirement addresses the termination of user-initiated logical sessions in contrast to the termination of network connections that are associated with communications sessions (i.e., disconnecting from the network). A logical session (for local, network, and remote access) is initiated whenever a user (or process acting on behalf of a user) accesses an organizational system. Such user sessions can be terminated (and thus terminate user access) without terminating network sessions. Session termination terminates all processes associated with a user's logical session except those processes that are specifically created by the user (i.e., session owner) to continue after the session is terminated. Conditions or trigger events requiring automatic session termination can include organization-defined periods of user inactivity, targeted responses to certain types of incidents, and time-of-day restrictions on system use.",
+    "assessment_procedures": "ASSESSMENT OBJECTIVE: Determine if the organization terminates (automatically) a user session after a defined condition.",
+    "priority": "P2"
+  },
+  {
+    "id": "03.02.01",
+    "family_id": "03.02",
+    "family_name": "Awareness and Training",
+    "category_id": "03.02",
+    "category_name": "Awareness and Training",
+    "title": "Ensure that managers, systems administrators, and users of organizational systems are made aware of the security risks",
+    "description": "Ensure that managers, systems administrators, and users of organizational systems are made aware of the security risks associated with their activities and of the applicable policies, standards, and procedures related to the security of those systems.",
+    "discussion": "Organizations determine the content and frequency of security awareness training and security awareness techniques based on the specific organizational requirements and the systems to which personnel have authorized access. The content includes a basic understanding of the need for information security and user actions to maintain security and to respond to suspected security incidents. The content also addresses awareness of the need for operations security. Security awareness techniques can include formal training, offering supplies inscribed with security reminders, generating email advisories or notices from organizational officials, displaying logon screen messages, and conducting information security awareness events.",
+    "assessment_procedures": "ASSESSMENT OBJECTIVE: Determine if the organization ensures that managers, systems administrators, and users of organizational systems are made aware of the security risks associated with their activities and of the applicable policies, standards, and procedures related to the security of those systems.",
+    "priority": "P2"
+  },
+  {
+    "id": "03.05.07",
+    "family_id": "03.05",
+    "family_name": "Identification and Authentication",
+    "category_id": "03.05",
+    "category_name": "Identification and Authentication",
+    "title": "Store and transmit only cryptographically-protected passwords",
+    "description": "Store and transmit only cryptographically-protected passwords.",
+    "discussion": "Cryptographically-protected passwords use salted one-way cryptographic hashes of passwords. See NIST Cryptographic Standards and Guidelines.",
+    "assessment_procedures": "ASSESSMENT OBJECTIVE: Determine if the organization stores and transmits only cryptographically-protected passwords.",
+    "priority": "P1"
+  },
+  {
+    "id": "03.08.03",
+    "family_id": "03.08",
+    "family_name": "Media Protection",
+    "category_id": "03.08",
+    "category_name": "Media Protection",
+    "title": "Sanitize or destroy system media containing CUI",
+    "description": "Sanitize or destroy system media containing CUI before disposal or release for reuse.",
+    "discussion": "This requirement applies to all system media, digital and non-digital, subject to disposal or reuse. Examples include: digital media found in workstations, network components, scanners, copiers, printers, notebook computers, and mobile devices; and non-digital media such as paper and microfilm. The sanitization process removes information from the media such that the information cannot be retrieved or reconstructed. Sanitization techniques, including clearing, purging, cryptographic erase, and destruction, prevent the disclosure of information to unauthorized individuals when such media is released for reuse or disposal. Organizations determine the appropriate sanitization methods, recognizing that destruction may be necessary when other methods cannot be applied to the media requiring sanitization. Organizations use discretion on the employment of sanitization techniques and procedures for media containing information that is in the public domain or publicly releasable or deemed to have no adverse impact on organizations or individuals if released for reuse or disposal. Sanitization of non-digital media includes destruction, removing CUI from documents, or redacting selected sections or words from a document by obscuring the redacted sections or words in a manner equivalent in effectiveness to removing the words or sections from the document. NARA policy and guidance control sanitization processes for controlled unclassified information.",
+    "assessment_procedures": "ASSESSMENT OBJECTIVE: Determine if the organization sanitizes or destroys system media containing CUI before disposal or release for reuse.",
+    "priority": "P1"
+  },
+  {
+    "id": "03.10.02",
+    "family_id": "03.10",
+    "family_name": "Physical Protection",
+    "category_id": "03.10",
+    "category_name": "Physical Protection",
+    "title": "Protect and monitor the physical facility and support infrastructure",
+    "description": "Protect and monitor the physical facility and support infrastructure for organizational systems.",
+    "discussion": "The physical protection of the facility and support infrastructure includes the protection of physical entry points. Monitoring physical access includes publicly accessible areas within organizational facilities.",
+    "assessment_procedures": "ASSESSMENT OBJECTIVE: Determine if the organization protects and monitors the physical facility and support infrastructure for organizational systems.",
+    "priority": "P1"
+  },
+  {
+    "id": "03.13.01",
+    "family_id": "03.13",
+    "family_name": "System and Communications Protection",
+    "category_id": "03.13",
+    "category_name": "System and Communications Protection",
+    "title": "Monitor, control, and protect communications at system boundaries",
+    "description": "Monitor, control, and protect communications (i.e., information transmitted or received by organizational systems) at the external boundaries and key internal boundaries of organizational systems.",
+    "discussion": "Communications can be monitored, controlled, and protected at boundary components and by restricting or prohibiting interfaces in organizational systems. Boundary components include gateways, routers, firewalls, guards, network-based malicious code analysis and virtualization systems, or encrypted tunnels implemented within a system security architecture (e.g., routers protecting firewalls or application gateways residing on protected subnetworks). Boundary controls include gateways, proxies, network-based malicious code analysis, and content filtering devices. The term monitoring implies that organizations are actively viewing/checking network traffic—either through manual processes, automated processes, or a combination of both. This requirement is not meant to imply that organizations need to purchase and operate additional or dedicated boundary control systems to conduct monitoring on internal system communications. Instead, the expectation is that organizations focus on practical means of monitoring communication activities, including (i) establishing connectivity restrictions on an organizational system with adequate monitoring, (ii) deploying the most appropriate boundaries based on the criticality of the information being processed, or (iii) relying on subcontractors to provide adequate boundary controls for CUI.",
+    "assessment_procedures": "ASSESSMENT OBJECTIVE: Determine if the organization monitors, controls, and protects communications (i.e., information transmitted or received by organizational systems) at the external boundaries and key internal boundaries of organizational systems.",
+    "priority": "P1"
+  },
+  {
+    "id": "03.14.01",
+    "family_id": "03.14",
+    "family_name": "System and Information Integrity",
+    "category_id": "03.14",
+    "category_name": "System and Information Integrity",
+    "title": "Identify, report, and correct system flaws in a timely manner",
+    "description": "Identify, report, and correct system flaws in a timely manner.",
+    "discussion": "Organizations identify systems that are affected by announced software and firmware flaws including potential vulnerabilities resulting from those flaws and report this information to designated personnel with information security responsibilities. Security-relevant updates include patches, service packs, hot fixes, and anti-virus signatures. Organizations address flaws discovered during security assessments, continuous monitoring, incident response activities, and system error handling. Organizations can take advantage of available resources such as the Common Weakness Enumeration (CWE) database or Common Vulnerabilities and Exposures (CVE) database in remediating flaws discovered in organizational systems. Organization-defined time periods for updating security-relevant software and firmware may vary based on a variety of factors including the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw). Some types of flaw remediation may require more testing than other types of remediation.",
+    "assessment_procedures": "ASSESSMENT OBJECTIVE: Determine if the organization identifies, reports, and corrects system flaws in a timely manner.",
+    "priority": "P1"
+  }
+]
