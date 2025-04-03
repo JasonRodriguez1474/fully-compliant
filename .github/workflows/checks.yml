@@ -1,0 +1,95 @@
+name: Checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch: # Allow manual triggering
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  lint-and-test:
+    name: Lint & Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js from .nvmrc
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc' # Reads version from .nvmrc
+          cache: 'pnpm'
+
+      - name: Set up pnpm from package.json
+        uses: pnpm/action-setup@v3
+        with:
+          # Reads version from package.json: "pnpm@9.1.4" -> "9.1.4"
+          version: ${{ fromJson(steps.read-package-json.outputs.packageJson).packageManager | split('@') | last() }}
+          run_install: false
+
+      # Step to read package.json needed for pnpm version extraction above
+      - name: Read package.json
+        id: read-package-json
+        uses: juliangruber/read-file-action@v1
+        with:
+          path: ./package.json
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install frontend dependencies
+        run: pnpm install --frozen-lockfile
+
+      # Add frontend lint/test steps here if needed, e.g.:
+      # - name: Lint frontend
+      #   run: pnpm lint
+      # - name: Test frontend
+      #   run: pnpm test
+
+      - name: Setup Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: stable
+          components: clippy
+
+      - name: Cache Rust dependencies (Cargo)
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: ./src-tauri -> target # Cache target dir for src-tauri workspace
+
+      - name: Install Linux dependencies for Tauri
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.0-dev \
+              build-essential \
+              curl \
+              wget \
+              file \
+              libssl-dev \
+              libgtk-3-dev \
+              libayatana-appindicator3-dev \
+              librsvg2-dev
+
+      - name: Run Rust linters (Clippy)
+        working-directory: ./src-tauri
+        run: cargo clippy -- -D warnings
+
+      - name: Run Rust tests
+        working-directory: ./src-tauri
+        run: cargo test --verbose
