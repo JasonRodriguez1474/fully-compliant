@@ -1,0 +1,15 @@
+{
+    "standard": "CMMC",
+    "version": "2.13",
+    "title": "CMMC Assessment Guide Level 2",
+    "publication_date": "2024-09",
+    "update_date": "2024-09",
+    "status": "Active",
+    "source_organization": "Department of Defense Chief Information Officer (DoD CIO)",
+    "purpose": "This document provides guidance in the preparation for and conduct of a Level 2 self-assessment or Level 2 certification assessment under the Cybersecurity Maturity Model Certification (CMMC) Program as set forth in section 170.16 of title 32, Code of Federal Regulations (CFR) and 32 CFR § 170.17 respectively.",
+    "focus": "Level 2 addresses the protection of Controlled Unclassified Information (CUI).",
+    "applicability": "This guide is intended for assessors, OSAs [Organizations Seeking Assessment], cybersecurity professionals, and individuals and companies that support CMMC efforts. It can be used as part of preparation for and conducting a Level 2 self-assessment or a Level 2 certification assessment, as set forth in 32 CFR § 170.16 and 32 CFR § 170.17.",
+    "url": "https://dodcio.defense.gov/CMMC/Documentation/",
+    "basis": "National Institute of Standards and Technology (NIST) Special Publication (SP) 800-171 Revision 2; title 32, Code of Federal Regulations (CFR) § 170.16 and § 170.17.",
+    "level": "Level 2"
+}
