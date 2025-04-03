@@ -29,7 +29,7 @@ jobs:
         uses: pnpm/action-setup@v3
         with:
           # Reads version from package.json: "pnpm@9.1.4" -> "9.1.4"
-          version: ${{ fromJson(steps.read-package-json.outputs.packageJson).packageManager | split('@') | last() }}
+          version: ${{ split(fromJson(steps.read-package-json.outputs.packageJson).packageManager, '@')[1] }}
           run_install: false
 
       # Step to read package.json needed for pnpm version extraction above
