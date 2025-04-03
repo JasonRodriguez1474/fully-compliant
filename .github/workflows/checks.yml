@@ -19,25 +19,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: '9'
+          run_install: false
+
       - name: Set up Node.js from .nvmrc
         uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc' # Reads version from .nvmrc
           cache: 'pnpm'
-
-      - name: Set up pnpm from package.json
-        uses: pnpm/action-setup@v3
-        with:
-          # Reads version from package.json: "pnpm@9.1.4" -> "9.1.4"
-          version: ${{ split(fromJson(steps.read-package-json.outputs.packageJson).packageManager, '@')[1] }}
-          run_install: false
-
-      # Step to read package.json needed for pnpm version extraction above
-      - name: Read package.json
-        id: read-package-json
-        uses: juliangruber/read-file-action@v1
-        with:
-          path: ./package.json
 
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -53,14 +45,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Install frontend dependencies
+      - name: Install dependencies
         run: pnpm install --frozen-lockfile
-
-      # Add frontend lint/test steps here if needed, e.g.:
-      # - name: Lint frontend
-      #   run: pnpm lint
-      # - name: Test frontend
-      #   run: pnpm test
 
       - name: Setup Rust toolchain
         uses: dtolnay/rust-toolchain@stable
@@ -76,7 +62,7 @@ jobs:
       - name: Install Linux dependencies for Tauri
         run: |
           sudo apt-get update
-          sudo apt-get install -y libwebkit2gtk-4.0-dev \
+          sudo apt-get install -y libwebkit2gtk-4.1-dev \
               build-essential \
               curl \
               wget \
@@ -84,7 +70,9 @@ jobs:
               libssl-dev \
               libgtk-3-dev \
               libayatana-appindicator3-dev \
-              librsvg2-dev
+              librsvg2-dev \
+              libsoup-3.0-dev \
+              libjavascriptcoregtk-4.1-dev
 
       - name: Run Rust linters (Clippy)
         working-directory: ./src-tauri
