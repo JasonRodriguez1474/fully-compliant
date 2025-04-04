@@ -7,22 +7,17 @@
       :width="250"
       cssClasses="chart-class"
     />
-    <div v-if="!chartLoaded" class="chart-fallback">
-      Loading chart data...
-    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed } from 'vue';
 import { DoughnutChart } from 'vue-chart-3';
 import { Chart, ChartData, ChartOptions } from 'chart.js';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title } from 'chart.js';
 
 // Register the required chart.js components
 ChartJS.register(ArcElement, Tooltip, Legend, Title);
-
-const chartLoaded = ref(false);
 
 // This would be dynamic in the future, connected to actual framework status
 const complianceData = ref({
@@ -104,13 +99,6 @@ const chartOptions = computed<ChartOptions<'doughnut'>>(() => {
 function updateComplianceData(data: { compliant: number, nonCompliant: number, inProgress: number }) {
   complianceData.value = data;
 }
-
-onMounted(() => {
-  // Set chartLoaded to true after a short delay to ensure the chart is rendered
-  setTimeout(() => {
-    chartLoaded.value = true;
-  }, 500);
-});
 </script>
 
 <style scoped>
@@ -129,15 +117,6 @@ onMounted(() => {
   position: relative;
   z-index: 1;
   height: 100% !important;
-}
-
-.chart-fallback {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #666;
-  font-size: 14px;
 }
 
 /* Target canvas element directly */
