@@ -13,11 +13,11 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { DoughnutChart } from 'vue-chart-3';
-import { Chart, ChartData, ChartOptions } from 'chart.js';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title } from 'chart.js';
+import { ChartData, ChartOptions } from 'chart.js';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title, DoughnutController } from 'chart.js';
 
 // Register the required chart.js components
-ChartJS.register(ArcElement, Tooltip, Legend, Title);
+ChartJS.register(ArcElement, Tooltip, Legend, Title, DoughnutController);
 
 // This would be dynamic in the future, connected to actual framework status
 const complianceData = ref({
