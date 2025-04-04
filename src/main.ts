@@ -1,22 +1,7 @@
+import { createApp } from 'vue';
 import { invoke } from "@tauri-apps/api/core";
 import { message } from '@tauri-apps/plugin-dialog';
-
-let greetInputEl: HTMLInputElement | null;
-let greetMsgEl: HTMLElement | null;
-
-async function greet() {
-  if (greetMsgEl && greetInputEl) {
-    greetMsgEl.textContent = await invoke("greet", {
-      name: greetInputEl.value,
-    });
-  }
-}
-
-function showStartupMessage() {
-  if (greetMsgEl) {
-    greetMsgEl.textContent = "Welcome to the app! Please enter your name.";
-  }
-}
+import App from './App.vue';
 
 async function checkFirstRun() {
   const isFirstRun = await invoke("is_first_run");
@@ -29,25 +14,17 @@ async function checkFirstRun() {
 }
 
 async function showFederalWarning() {
-  const warningText = await invoke("show_federal_warning");
-  await message(warningText, { title: "FEDERAL SYSTEM WARNING", kind: "warning" });
+  const warningText = "Please practice caution when storing U.S. Government data on this GRC Platform. Access might be controlled by your organization or partners, and unauthorized use potentially prohibited. Always consult your IT or Cybersecurity department before introducing new apps to a secure network.";
+  await message(warningText, { title: "FEDERAL DATA WARNING", kind: "info" });
 }
 
 window.addEventListener("DOMContentLoaded", async () => {
-  greetInputEl = document.querySelector("#greet-input");
-  greetMsgEl = document.querySelector("#greet-msg");
-  
   // Show federal warning on every app open
   await showFederalWarning();
   
   // Check if this is first run and show welcome message if it is
   await checkFirstRun();
   
-  // Show regular startup message in the UI
-  showStartupMessage();
-  
-  document.querySelector("#greet-form")?.addEventListener("submit", (e) => {
-    e.preventDefault();
-    greet();
-  });
+  // Mount Vue app
+  createApp(App).mount('#app');
 });
