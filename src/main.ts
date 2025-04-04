@@ -21,16 +21,16 @@ function showStartupMessage() {
 async function checkFirstRun() {
   const isFirstRun = await invoke("is_first_run");
   if (isFirstRun) {
-    await dialog.message(
+    await message(
       "Welcome to Fully-Compliant, a Tauri-based compliance tool designed to help you manage and track your organization's compliance frameworks.",
-      { title: "Welcome to Fully-Compliant", type: "info" }
+      { title: "Welcome to Fully-Compliant", kind: "info" }
     );
   }
 }
 
 async function showFederalWarning() {
   const warningText = await invoke("show_federal_warning");
-  await message.message(warningText, { title: "FEDERAL SYSTEM WARNING", type: "warning" });
+  await message(warningText, { title: "FEDERAL SYSTEM WARNING", kind: "warning" });
 }
 
 window.addEventListener("DOMContentLoaded", async () => {
